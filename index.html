@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangalore Local Guide - AI-Powered Local Recommendations</title>
+    <meta name="description" content="A comprehensive local guide for Bangalore with AI-powered recommendations for food, traffic, and local insights.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Bangalore Local Guide">
+    <meta property="og:description" content="AI-powered local recommendations for Bangalore - food, traffic, and cultural insights">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://srinivasindia.github.io/Local_guide/">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            padding: 60px 0;
+        }
+        
+        .header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        
+        .main-content {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+            background: #f8f9fa;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .feature h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+        
+        .btn-secondary:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        .tech-stack {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 40px 0;
+        }
+        
+        .tech-stack h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .tech-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .tech-item {
+            background: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 500;
+            color: #667eea;
+            border: 1px solid #e9ecef;
+        }
+        
+        .footer {
+            text-align: center;
+            color: white;
+            padding: 40px 0;
+            opacity: 0.8;
+        }
+        
+        .github-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .github-link:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .header p {
+                font-size: 1.1rem;
+            }
+            
+            .main-content {
+                padding: 20px;
+                margin: 20px 0;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🏙️ Bangalore Local Guide</h1>
+            <p>AI-Powered Local Recommendations for the Silicon Valley of India</p>
+        </header>
+        
+        <main class="main-content">
+            <section class="features">
+                <div class="feature">
+                    <div class="feature-icon">🍽️</div>
+                    <h3>Food Recommendations</h3>
+                    <p>Discover authentic local cuisine, street food gems, and popular restaurants across Bangalore's diverse neighborhoods.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🚗</div>
+                    <h3>Traffic Insights</h3>
+                    <p>Get real-time traffic advice, route suggestions, and local transportation tips to navigate Bangalore efficiently.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🏛️</div>
+                    <h3>Cultural Spots</h3>
+                    <p>Explore cultural landmarks, events, and hidden gems that make Bangalore unique and vibrant.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI-Powered</h3>
+                    <p>Intelligent responses using advanced language models and local knowledge base for personalized recommendations.</p>
+                </div>
+            </section>
+            
+            <div class="cta-buttons">
+                <a href="https://github.com/SRINIVASINDIA/Local_guide" class="btn btn-primary" target="_blank">
+                    📱 View on GitHub
+                </a>
+                <a href="https://share.streamlit.io" class="btn btn-secondary" target="_blank">
+                    🚀 Deploy on Streamlit
+                </a>
+            </div>
+            
+            <div class="tech-stack">
+                <h3>🛠️ Technology Stack</h3>
+                <div class="tech-list">
+                    <span class="tech-item">Streamlit</span>
+                    <span class="tech-item">Python</span>
+                    <span class="tech-item">Kiro AI</span>
+                    <span class="tech-item">Pytest</span>
+                    <span class="tech-item">Hypothesis</span>
+                </div>
+            </div>
+            
+            <section style="text-align: center; margin: 40px 0;">
+                <h3>🚀 Quick Start</h3>
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                    <pre style="text-align: left; overflow-x: auto;"><code># Clone the repository
+git clone https://github.com/SRINIVASINDIA/Local_guide.git
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the application
+streamlit run app.py</code></pre>
+                </div>
+            </section>
+            
+            <section style="text-align: center; margin: 40px 0;">
+                <h3>📋 Project Structure</h3>
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                    <pre style="text-align: left;"><code>├── app.py                 # Main Streamlit application
+├── requirements.txt       # Python dependencies
+├── product.md            # Bangalore knowledge base
+├── .streamlit/           # Streamlit configuration
+├── .kiro/               # AI agent configuration
+└── *.py                 # Core modules (context, agents, etc.)</code></pre>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <p>
+                Built with ❤️ for Bangalore | 
+                <a href="https://github.com/SRINIVASINDIA/Local_guide" class="github-link" target="_blank">
+                    View Source Code
+                </a>
+            </p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">
+                © 2025 Bangalore Local Guide - Open Source Project
+            </p>
+        </footer>
+    </div>
+    
+    <script>
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Add loading animation
+        window.addEventListener('load', function() {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s ease-in-out';
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+    </script>
+</body>
+</html>
